@@ -83,8 +83,8 @@
   }
   .photo{
     margin-left: 50px;
-    width: 504px;
-    height: 504px;
+    width: 60vh;
+    aspect-ratio: 1;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 500px;
     background-image: url('/src/assets/logo-home.png');

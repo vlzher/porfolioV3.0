@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 14px;
     width: 50px;
     height: 15px;
     transition: 0.2s;
@@ -49,7 +49,7 @@
     display: flex;
     align-items:center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 14px;
     background-color: #FE461C;
     border-radius: 5px;
     transition: 0.2s;

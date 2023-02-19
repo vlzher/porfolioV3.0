@@ -33,8 +33,9 @@
     padding: 2.5% 5% 0 5%;
   }
   .photo{
-    width: 500px;
-    height: 500px;
+    width: 60vh;
+
+    aspect-ratio: 1;
     background-image: url('/src/assets/about-me-photo.png');
     background-size: cover;
     background-position: center;
