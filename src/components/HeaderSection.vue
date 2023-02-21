@@ -6,7 +6,7 @@
       <div class="button semi-bold">Portfolio</div>
       <div class="button semi-bold">Resume</div>
       <div class="button semi-bold" :style="{marginRight:'10px'}">Contact</div>
-      <div class="button-cv semi-bold">Download CV</div>
+      <a href="CV.pdf" download class="button-cv semi-bold">Download CV</a>
     </div>
   </div>
 </template>
@@ -54,6 +54,7 @@
     border-radius: 5px;
     transition: 0.2s;
     cursor: pointer;
+    text-decoration: none;
 
   }
   .button-cv:hover{

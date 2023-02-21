@@ -1,26 +1,40 @@
 <template>
   <div class="about-me-section">
-    <div class="photo"></div>
-    <div class="about-me">
-      <div class="about-me-content">
-        <div class="about-me-header">
-          <div class="about-me-header-text">About Me</div>
-        </div>
-        <div class="about-me-content-header">Uladzislau Zherabiatsyeu</div>
-        <div class="about-me-content-text">
-          I am a 2-year computer science student with a passion for programming.
-          I have experience in multiple programming languages and am always looking to learn more.
-          I am a strong communicator and enjoy working on projects that allow me to collaborate with others.
-          I am excited to continue honing my skills and building a diverse portfolio of work in the tech industry.
-        </div>
-        <div class="button-section">
-          <div class="button-cv semi-bold">Download CV</div>
+    <div class="about-me-section1">
+      <div class="photo"></div>
+      <div class="about-me">
+        <div class="about-me-content">
+          <div class="about-me-header">
+            <div class="about-me-header-text">About Me</div>
+          </div>
+          <div class="about-me-content-header">Uladzislau Zherabiatsyeu</div>
+          <div class="about-me-content-text">
+            I am a 2-year computer science student with a passion for programming.
+            I have experience in multiple programming languages and am always looking to learn more.
+            I am a strong communicator and enjoy working on projects that allow me to collaborate with others.
+            I am excited to continue honing my skills and building a diverse portfolio of work in the tech industry.
+          </div>
+          <div class="button-section">
+            <a href="CV.pdf" download class="button-cv semi-bold">Download CV</a>
+          </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>
+<script setup>
+import { onMounted } from "@vue/runtime-core";
+import intersectionEntry from "@/composables/intersectionEntry.vue";
+const { observedElement, elementClass, interOptions, interCallback, observer } =
+    intersectionEntry();
+onMounted(() => {
+  observedElement.value = document.querySelector(".about-me-section1");
+  elementClass.value = ["animate__animated", "animate__fadeInLeft"];
+  interOptions(null, 0);
+  interCallback();
+  observer.observe(observedElement.value);
+});
+</script>
 
 <style scoped>
   .about-me-section{
@@ -30,6 +44,14 @@
     width: 100%;
     height: 90vh;
     background-color: #24263B;
+  }
+  .about-me-section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+
     padding: 2.5% 5% 0 5%;
   }
   .photo{
@@ -121,6 +143,7 @@
     border-radius: 5px;
     transition: 0.2s;
     cursor: pointer;
+    text-decoration: none;
 
   }
   .button-cv:hover{

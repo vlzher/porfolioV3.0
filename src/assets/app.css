@@ -1,5 +1,6 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "bootstrap";
+@import 'animate.css';
 *{
     margin: 0;
     padding: 0;

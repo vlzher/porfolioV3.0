@@ -38,7 +38,6 @@ const props = defineProps({
   viewURL: String,
   isDisabled: Boolean,
 })
-console.log(props.photoURL);
   const filterClick = (e) => {
     e.preventDefault();
     isActive.value = !isActive.value;
@@ -98,7 +97,7 @@ ul.filters > li > a:hover {
 
 ul.filters > li.active > a {
   color: #fff;
-  background-color: rgba(252, 41, 74, 1);
+  background-color: rgba(254, 70, 28, 1);
 }
 
 .filters.filters-tag {
@@ -118,7 +117,7 @@ ul.filters.filters-tag > li > a {
 
 ul.filters.filters-tag > li > a:hover {
   color: #fff;
-  background-color: rgba(252, 41, 74, 1);
+  background-color: rgba(254, 70, 28, 1);
   transition: 0.1s;
 }
 
@@ -184,7 +183,7 @@ ul.filters.filters-tag > li > a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(252, 41, 74, 0.9);
+  background-color: rgba(254, 70, 29, 0.9);
   z-index: 10;
   display: flex;
   align-items: center;
@@ -226,7 +225,7 @@ h3.title {
 }
 
 .project-btn:hover {
-  background-color: rgba(252, 41, 74, 1);
+  background-color: rgba(254, 70, 28, 1);
   color: #FFFFFF;
 }
 </style>

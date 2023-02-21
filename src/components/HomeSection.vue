@@ -1,9 +1,8 @@
 <template>
   <div class="home">
-    <div class="ellipse"></div>
     <div class="home-content">
       <div class="home-header">Welcome my portfolio</div>
-      <div class="home-main-text">Hello, I'm Uladzislau <span :style="{color: '#FE461C'}">Front-End</span> Developer.</div>
+      <div class="home-main-text">Hey, I'm Uladzislau <span :style="{color: '#FE461C'}">Front-End</span> Developer.</div>
       <div class="home-sub-text">Web development is not just about creating pretty websites.
         It's about understanding the world we live in and creating solutions
         that make people's lives easier.</div>
@@ -17,9 +16,9 @@
     display: flex;
     justify-content:  center;
     align-items: center;
-    padding: 0 5% 0 5%;
     width: 100%;
-    height: calc(100vh - 200px);
+    height: calc(100vh);
+    padding: 0 5% 200px;
     background-color: #1F2235;
   }
   .home-content{
@@ -71,15 +70,6 @@
     color: #FFFFFF;
     margin-bottom: 10px;
     margin-top: 10px;
-  }
-  .ellipse{
-    position: absolute;
-    width: 204px;
-    height: 204px;
-    left: 120px;
-    top: 150px;
-    border-radius: 50%;
-    background: rgba(187, 197, 211, 0.08);
   }
   .photo{
     margin-left: 50px;
