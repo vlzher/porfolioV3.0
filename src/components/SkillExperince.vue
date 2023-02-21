@@ -36,7 +36,7 @@ const sectionNumber = ref(0);
 const { observedElement, elementClass, interOptions, interCallback, observer } =
     intersectionEntry();
 onMounted(() => {
-  observedElement.value = document.querySelector(".portfolio");
+  observedElement.value = document.querySelector(".skill-zone");
   elementClass.value = ["animate__animated", "animate__fadeInLeft"];
   interOptions(null, 0);
   interCallback();
@@ -51,14 +51,15 @@ onMounted(() => {
   margin-top: 10px;
 }
 .skill-zone{
+  margin-top: 20px;
   width: 66%;
-  height: 80%;
+  height: 90%;
   display: flex;
   flex-direction: column;
 }
 .skill-container{
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   background-color: #24263B;
   justify-content: center;
@@ -69,7 +70,6 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
   width: 180px;
   height: 50px;
   background: #24263B;
@@ -90,7 +90,7 @@ onMounted(() => {
 }
 .main-text{
   color: #FFFFFF;
-
+  margin-top:20px;
   font-family: 'Outfit', sans-serif;
   font-style: normal;
   font-weight: 600;

@@ -17,8 +17,8 @@
     justify-content:  center;
     align-items: center;
     width: 100%;
-    height: calc(100vh);
-    padding: 0 5% 200px;
+    height: calc(100vh + 70px);
+    padding: 0 5% 100px 5%;
     background-color: #1F2235;
   }
   .home-content{

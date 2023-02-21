@@ -42,7 +42,7 @@ onMounted(() => {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90vh;
+    height: 120vh;
     background-color: #24263B;
   }
   .about-me-section1{
@@ -50,9 +50,9 @@ onMounted(() => {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90vh;
+    height: 120vh;
 
-    padding: 2.5% 5% 0 5%;
+    padding: 2.5% 5% 5% 5%;
   }
   .photo{
     width: 60vh;

@@ -1,17 +1,39 @@
 <template>
-  <div class="header">
+  <div class="header" :class="direction==='up' ? 'active' : 'hidden'">
     <div class="buttons">
-      <div class="button semi-bold">Home</div>
-      <div class="button semi-bold">About</div>
-      <div class="button semi-bold">Portfolio</div>
-      <div class="button semi-bold">Resume</div>
-      <div class="button semi-bold" :style="{marginRight:'10px'}">Contact</div>
+      <div class="button semi-bold" @click="handleClickScroll('home')">Home</div>
+      <div class="button semi-bold" @click="handleClickScroll('about-me-section')">About</div>
+      <div class="button semi-bold" @click="handleClickScroll('portfolio')">Portfolio</div>
+      <div class="button semi-bold" @click="handleClickScroll('skill-container')">Resume</div>
+      <div class="button semi-bold" :style="{marginRight:'10px'}" @click="handleClickScroll('')">Contact</div>
       <a href="CV.pdf" download class="button-cv semi-bold">Download CV</a>
     </div>
   </div>
 </template>
+<script setup>
+import scrollDirection from "@/composables/scrollDirection.vue";
+
+const direction = scrollDirection();
+const handleClickScroll =  (section) => {
+  const element = document.getElementsByClassName(section);
+  if (element) {
+    element[0].scrollIntoView({ behavior: 'smooth' });
+  }
+};
+</script>
 <style scoped>
+.header.active{
+  top: 0px;
+  transition: 0.5s;
+}
+.header.hidden{
+  transition: 0.5s;
+  top: -70px;
+}
   .header{
+    position: fixed;
+    top: 0px;
+    z-index: 5;
     display: flex;
     align-items: center;
     justify-content: right;

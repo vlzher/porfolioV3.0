@@ -44,7 +44,7 @@
     height: 80%;
     display: flex;
     flex-direction: column;
-   padding-top: 40px;
+    margin-top: 40px;
   }
   .language{
     width: 100%;
