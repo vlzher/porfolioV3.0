@@ -1,7 +1,7 @@
 <template>
   <div class="project" @mouseleave="e => mouseLeaveProject(e)" @mouseenter="e => mouseEnterProject(e)">
     <div class="project-head">
-      <img :src="props.photoURL" alt="" class="img-fluid card-img custom-img">
+      <img :src="imagePath" alt="" class="img-fluid card-img custom-img">
       <div class="project-overlay" style="top: 0px;">
         <h4>{{fText}}</h4>
       </div>
@@ -26,11 +26,13 @@
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
-  const isActive = ref(false);
+import {computed, ref} from "vue";
+
+const isActive = ref(false);
+
 
 const props = defineProps({
-  photoURL: String,
+  photoURL: Number,
   fText: String,
   sText: String,
   tags: Array[String],
@@ -38,6 +40,32 @@ const props = defineProps({
   viewURL: String,
   isDisabled: Boolean,
 })
+const imagePath = computed(() => {
+  switch (props.photoURL) {
+    case 1:
+      return new URL('../assets/coinPriceChecker.png' +
+          '',
+          import.meta.url)
+    case 2:
+      return new URL('../assets/dictionary.png',
+          import.meta.url)
+    case 3:
+      return new URL('../assets/clock.png',
+          import.meta.url)
+    case 4:
+      return new URL('../assets/kanbanBoard.png' +
+          '',
+          import.meta.url)
+    case 5:
+      return new URL('../assets/paintAnalogue_475x232.png',
+          import.meta.url)
+    case 6:
+      return new URL('../assets/teamder.png',
+          import.meta.url)
+  }
+});
+console.log(imagePath.value);
+const imageUrl = computed(() => {return new URL(`./dir/${props.photoURL}.png`, import.meta.url).href})
   const filterClick = (e) => {
     e.preventDefault();
     isActive.value = !isActive.value;
