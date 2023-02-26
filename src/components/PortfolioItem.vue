@@ -43,7 +43,7 @@ const props = defineProps({
 const imagePath = computed(() => {
   switch (props.photoURL) {
     case 1:
-      return new URL('../assets/coinPriceChecker.png' +
+      return new URL('../assets/coin-price-checker.png' +
           '',
           import.meta.url)
     case 2:
@@ -53,7 +53,7 @@ const imagePath = computed(() => {
       return new URL('../assets/clock.png',
           import.meta.url)
     case 4:
-      return new URL('../assets/kanbanBoard.png' +
+      return new URL('../assets/kanban-board.png' +
           '',
           import.meta.url)
     case 5:
