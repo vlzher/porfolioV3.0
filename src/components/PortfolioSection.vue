@@ -23,6 +23,7 @@
   }
   .portfolio{
     height: 650vw !important;
+    padding: 10% 5% 0 5% !important;
   }
   .portfolio-container{
     height: 590vw !important;
