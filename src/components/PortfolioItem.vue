@@ -61,7 +61,6 @@ const imagePath = computed(() => {
           import.meta.url)
   }
 });
-console.log(imagePath.value);
   const filterClick = (e) => {
     e.preventDefault();
     isActive.value = !isActive.value;
