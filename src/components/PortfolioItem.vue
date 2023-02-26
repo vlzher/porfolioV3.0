@@ -43,9 +43,7 @@ const props = defineProps({
 const imagePath = computed(() => {
   switch (props.photoURL) {
     case 1:
-      return new URL('../assets/coin-price-checker.png' +
-          '',
-          import.meta.url)
+      return new URL('../assets/coin-price-checker.png',import.meta.url)
     case 2:
       return new URL('../assets/dictionary.png',
           import.meta.url)
@@ -53,8 +51,7 @@ const imagePath = computed(() => {
       return new URL('../assets/clock.png',
           import.meta.url)
     case 4:
-      return new URL('../assets/kanban-board.png' +
-          '',
+      return new URL('../assets/kanban-board.png',
           import.meta.url)
     case 5:
       return new URL('../assets/paintAnalogue_475x232.png',
@@ -65,7 +62,6 @@ const imagePath = computed(() => {
   }
 });
 console.log(imagePath.value);
-const imageUrl = computed(() => {return new URL(`./dir/${props.photoURL}.png`, import.meta.url).href})
   const filterClick = (e) => {
     e.preventDefault();
     isActive.value = !isActive.value;
