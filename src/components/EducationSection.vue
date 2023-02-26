@@ -11,8 +11,13 @@
 <style scoped>
 @media screen and (max-width: 1250px) {
   .pwr-logo{
-    width: 100px !important;
-    height: 145px !important;
+    aspect-ratio: 1;
+    width: 80px !important;
+    height: 116px !important;
+  }
+  .education-zone {
+    padding-left: 0 !important;
+
   }
 
 }

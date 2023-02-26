@@ -33,7 +33,7 @@
 <style scoped>
 @media screen and (max-width: 1250px) {
   .link-container{
-    width: 75vw !important;
+    width: 90vw !important;
   }
 
 

@@ -15,7 +15,7 @@
 @media screen and (max-width: 1250px) {
   .home{
     flex-direction: column-reverse;
-    height: 80vh !important;
+    height: 100vh !important;
     justify-content: flex-end !important;
     padding-top: 80px !important;
     padding-left: 0 !important;

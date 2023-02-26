@@ -130,7 +130,7 @@ onMounted(() => {
     font-family: 'Outfit',sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: min(45px,6cqi);
+    font-size: min(45px,6.5cqi);
     line-height: 48px;
     color: #FFFFFF;
     margin-bottom: 20px;
