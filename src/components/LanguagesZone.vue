@@ -39,6 +39,12 @@
 </template>
 
 <style scoped>
+@media screen and (max-width: 1250px) {
+  .language-zone{
+    width: 100% !important;
+    margin-top: 80px !important;
+  }
+}
   .language-zone{
     width: 70%;
     display: flex;

@@ -62,6 +62,23 @@ const props = defineProps({
 </script>
 
 <style scoped>
+@media screen and (max-width:1250px) {
+.project:nth-child(2) {
+
+  grid-row: 2 / 3 !important;
+  grid-column: 1 !important;
+}
+.project:nth-child(4) {
+
+  grid-row: 4 / 5 !important;
+  grid-column: 1 !important;
+}
+.project:nth-child(6) {
+
+  grid-row: 6 / 7 !important;
+  grid-column: 1 !important;
+}
+}
 .custom-img{
   border: none;
   border-radius: 15px;

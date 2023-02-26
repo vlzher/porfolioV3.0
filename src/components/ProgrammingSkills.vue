@@ -12,6 +12,17 @@
 </template>
 
 <style scoped>
+@media screen and (max-width: 1250px) {
+ .skill-container1{
+   grid-template-columns: repeat(1, 1fr) !important;
+   grid-template-rows: repeat(6, 1fr) !important;
+   width: 100% !important;
+ }
+  .skill{
+    width: 100% !important;
+    height: 40px !important;
+  }
+}
 .skill-container1{
   margin-top:60px;
   display:grid;

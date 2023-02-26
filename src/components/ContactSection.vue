@@ -31,6 +31,14 @@
 });
 </script>
 <style scoped>
+@media screen and (max-width: 1250px) {
+  .link-container{
+    width: 75vw !important;
+  }
+
+
+}
+
 .contact-zone{
   width: 100%;
   height: 50vh;

@@ -37,6 +37,28 @@ onMounted(() => {
 </script>
 
 <style scoped>
+@media screen and (max-width: 1250px) {
+  .about-me-section1 {
+    flex-direction: column;
+    padding: 5% !important;
+  }
+  .about-me {
+    margin: 50px 0 10px 0 !important;
+    width: 90% !important;
+    height: auto !important;
+  }
+  .about-me-content{
+    padding: 0 5px 0 5px !important;
+  }
+  .about-me-content-text{
+    width: auto !important;
+    height: auto !important;
+  }
+  .photo{
+    width: 350px !important;
+    height: 350px !important;
+  }
+}
   .about-me-section{
     display: flex;
     justify-content: center;
@@ -108,7 +130,7 @@ onMounted(() => {
     font-family: 'Outfit',sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 45px;
+    font-size: min(45px,6cqi);
     line-height: 48px;
     color: #FFFFFF;
     margin-bottom: 20px;
@@ -119,7 +141,7 @@ onMounted(() => {
     font-family: 'Public Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
+    font-size: min(3.5cqi,16px);
     line-height: 26px;
     color: #FFFFFF;
     margin-bottom: 10px;

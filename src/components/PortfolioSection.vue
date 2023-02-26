@@ -16,6 +16,20 @@
   </div>
 </template>
 <style scoped>
+@media screen and (max-width: 1250px) {
+  .portfolio-container {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(6,1fr) !important;
+  }
+  .portfolio{
+    height: 480vw !important;
+  }
+  .portfolio-container{
+    height: 440vw !important;
+    width: 70vw !important;
+    gap: 40px !important;
+  }
+}
 .portfolio{
   display: flex;
   flex-direction: column;

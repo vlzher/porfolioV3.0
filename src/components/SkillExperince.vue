@@ -45,6 +45,15 @@ onMounted(() => {
 
 </script>
 <style scoped>
+@media screen and (max-width:1250px){
+  .skill-container{
+    padding-left: 10% !important;
+    height: 80vh !important;
+  }
+  .skill-zone{
+    width: 90% !important;
+  }
+}
 .button-zone{
   display: flex;
   align-items: center;
@@ -94,7 +103,7 @@ onMounted(() => {
   font-family: 'Outfit', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
+  font-size: min(48px,7cqi);
   line-height: 72px;
 
   text-transform: capitalize;
