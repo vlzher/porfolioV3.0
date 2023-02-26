@@ -5,7 +5,7 @@
       <div class="button semi-bold" @click="handleClickScroll('about-me-section')">About</div>
       <div class="button semi-bold" @click="handleClickScroll('portfolio')">Portfolio</div>
       <div class="button semi-bold" @click="handleClickScroll('skill-container')">Resume</div>
-      <div class="button semi-bold" :style="{marginRight:'10px'}" @click="handleClickScroll('')">Contact</div>
+      <div class="button semi-bold" :style="{marginRight:'10px'}" @click="handleClickScroll('contact-zone')">Contact</div>
       <a href="CV.pdf" download class="button-cv semi-bold">Download CV</a>
     </div>
   </div>

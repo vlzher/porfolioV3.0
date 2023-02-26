@@ -19,7 +19,7 @@
                   leave-active-class="animate__animated animate__fadeOutDown animate__faster" mode="out-in" appear>
       <ProgrammingSkills v-if="sectionNumber===0"/>
       <LanguagesZone v-else-if="sectionNumber===1"/>
-      <EducationZone v-else-if="sectionNumber===2"/>
+      <EducationSection v-else-if="sectionNumber===2"/>
       </Transition>
 
     </div>
@@ -29,9 +29,9 @@
 import ProgrammingSkills from "@/components/ProgrammingSkills.vue";
 import LanguagesZone from "@/components/LanguagesZone.vue";
 import {ref} from "vue";
-import EducationZone from "@/components/EducationZone.vue";
 import { onMounted } from "@vue/runtime-core";
 import intersectionEntry from "@/composables/intersectionEntry.vue";
+import EducationSection from "@/components/EducationSection.vue";
 const sectionNumber = ref(0);
 const { observedElement, elementClass, interOptions, interCallback, observer } =
     intersectionEntry();

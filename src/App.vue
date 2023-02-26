@@ -9,6 +9,8 @@
   <AboutMe />
   <PortfolioSection/>
   <SkillExperince/>
+  <ContactSection/>
+  <FooterSection/>
 </template>
 <script setup>
 
@@ -17,6 +19,8 @@ import HomeSection from "@/components/HomeSection.vue";
 import AboutMe from "@/components/AboutMe.vue";
 import PortfolioSection from "@/components/PortfolioSection.vue";
 import SkillExperince from "@/components/SkillExperince.vue";
+import ContactSection from "@/components/ContactSection.vue";
+import FooterSection from "@/components/FooterSection.vue";
 </script>
 <style scoped>
 .ellipse{

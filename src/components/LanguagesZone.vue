@@ -41,7 +41,6 @@
 <style scoped>
   .language-zone{
     width: 70%;
-    height: 80%;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
