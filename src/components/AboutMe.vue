@@ -42,8 +42,11 @@ onMounted(() => {
     flex-direction: column;
     padding: 5% !important;
   }
+  .about-me-section{
+    height: 120vh !important;
+  }
   .about-me {
-    margin: 50px 0 10px 0 !important;
+    margin: 20px 0 0 0 !important;
     width: 90% !important;
     height: auto !important;
   }
@@ -57,6 +60,12 @@ onMounted(() => {
   .photo{
     width: 350px !important;
     height: 350px !important;
+  }
+  .about-me-content-header{
+    margin-bottom: 10px !important;
+  }
+  .button-section{
+    margin-top: 20px !important;
   }
 }
   .about-me-section{

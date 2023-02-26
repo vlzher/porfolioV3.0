@@ -53,6 +53,9 @@ onMounted(() => {
   .skill-zone{
     width: 90% !important;
   }
+  .button{
+    font-size: 12px !important;
+  }
 }
 .button-zone{
   display: flex;
