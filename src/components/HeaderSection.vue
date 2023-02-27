@@ -8,10 +8,20 @@
       <div class="button semi-bold" :style="{marginRight:'10px'}" @click="handleClickScroll('contact-zone')">Contact</div>
       <a href="CV.pdf" download class="button-cv semi-bold">Download CV</a>
     </div>
+    <div class="button-mobile" @click=handleClickMenu :class="activeMenu ? 'active' : ''"/>
+    <div class="mobile-menu" :class="activeMenu && direction==='up' ? 'active' : ''">
+      <div class="button-cv semi-bold mobile" :class="{color: ''}" @click="handleClickScroll('home')">Home</div>
+      <div class="button-cv semi-bold mobile" @click="handleClickScroll('about-me-section')">About</div>
+      <div class="button-cv semi-bold mobile" @click="handleClickScroll('portfolio')">Portfolio</div>
+      <div class="button-cv semi-bold mobile" @click="handleClickScroll('skill-container')">Resume</div>
+      <div class="button-cv semi-bold mobile" @click="handleClickScroll('contact-zone')">Contact</div>
+      <a href="CV.pdf" download class="button-cv semi-bold">Download CV</a>
+    </div>
   </div>
 </template>
 <script setup>
 import scrollDirection from "@/composables/scrollDirection.vue";
+import {ref} from "vue";
 
 const direction = scrollDirection();
 const handleClickScroll =  (section) => {
@@ -19,9 +29,65 @@ const handleClickScroll =  (section) => {
   if (element) {
     element[0].scrollIntoView({ behavior: 'smooth' });
   }
+  activeMenu.value = false;
 };
+
+const activeMenu = ref(false);
+const handleClickMenu = () => {
+  activeMenu.value = !activeMenu.value;
+}
 </script>
 <style scoped>
+@media screen and (max-width: 1250px) {
+  .buttons{
+    display: none !important;
+  }
+  .mobile-menu{
+    display: flex !important;
+  }
+  .button-mobile{
+    display: initial !important;
+  }
+}
+.mobile-menu{
+  display: none;
+  position: absolute;
+  background-color: #1F2235;
+  top: -80px;
+  right: -60px;
+  transform: scale(0);
+  transition: 0.3s;
+  height: 250px;
+  width: 200px;
+  z-index: 5;
+  border-radius: 10px;
+  //display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5%;
+}
+.mobile-menu.active{
+  transform: scale(1);
+  top: 80px;
+  right: 15px;
+}
+.button-mobile{
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-image: url('../assets/menu-mobile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.2s;
+  z-index: 6;
+}
+.button-mobile.active{
+  transform: rotate(90deg);
+}
 .header.active{
   top: 0px;
   transition: 0.5s;
@@ -33,7 +99,7 @@ const handleClickScroll =  (section) => {
   .header{
     position: fixed;
     top: 0px;
-    z-index: 5;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -61,6 +127,9 @@ const handleClickScroll =  (section) => {
     cursor: pointer;
 
   }
+  .button.mobile{
+    color: #FE461C;
+  }
   .button:hover{
     color: #FE461C;
   }
@@ -78,6 +147,9 @@ const handleClickScroll =  (section) => {
     cursor: pointer;
     text-decoration: none;
 
+  }
+  .button-cv.mobile{
+    height: 25px;
   }
   .button-cv:hover{
     color: #FE461C;
