@@ -48,7 +48,7 @@ onMounted(() => {
 @media screen and (max-width:1250px){
   .skill-container{
     padding-left: 10% !important;
-    height: 110vh !important;
+    height: 120vh !important;
   }
   .skill-zone{
     width: 90% !important;
