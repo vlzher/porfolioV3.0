@@ -31,6 +31,6 @@ import FooterSection from "@/components/FooterSection.vue";
   top: 150px;
   border-radius: 50%;
   background: rgba(187, 197, 211, 0.08);
-  z-index: 4;
+  z-index: 2;
 }
 </style>
