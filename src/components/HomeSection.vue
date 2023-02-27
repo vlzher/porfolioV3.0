@@ -23,8 +23,9 @@
   }
   .photo{
 
-    height: 250px !important;
-    width: 250px !important;
+    height: min(60vh,80vw) !important;
+    width: initial !important;
+    aspect-ratio: 1 !important;
     margin-left: 0 !important;
   }
   .home-content{
