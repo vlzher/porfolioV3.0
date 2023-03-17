@@ -33,4 +33,9 @@ import FooterSection from "@/components/FooterSection.vue";
   background: rgba(187, 197, 211, 0.08);
   z-index: 2;
 }
+@media screen and (max-width: 1250px) {
+  .ellipse{
+    display: none;
+  }
+}
 </style>
