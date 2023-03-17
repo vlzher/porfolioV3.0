@@ -17,16 +17,16 @@
     <div class="language">
       <div class="language-upper">
         <div class="language-text">Polish</div>
-        <div class="language-text">B2</div>
+        <div class="language-text">C1</div>
       </div>
-      <div class="language-bar"><div :style="{width:'66.66%'}" class="language-progress"></div></div>
+      <div class="language-bar"><div :style="{width:'83.33%'}" class="language-progress"></div></div>
     </div>
     <div class="language">
       <div class="language-upper">
         <div class="language-text">English</div>
-        <div class="language-text">B2</div>
+        <div class="language-text">C1</div>
       </div>
-      <div class="language-bar"><div :style="{width:'66.66%'}" class="language-progress"></div></div>
+      <div class="language-bar"><div :style="{width:'83.33%'}" class="language-progress"></div></div>
     </div>
     <div class="language">
       <div class="language-upper">
