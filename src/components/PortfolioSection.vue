@@ -8,7 +8,7 @@
     <div class="portfolio-container">
       <PortfolioItem :photoURL=1 fText="Crypto Price Checker" sText="Real-Time Crypto Price App" :tags="['Vue', 'LocalStorage', 'WS']" codeURL="https://github.com/vlzher/crypto-price-checker" viewURL="https://crypto-price-graph.netlify.app/"/>
       <PortfolioItem :photoURL=2 fText="Dictionary" sText="Word-Collecting App Email: test@test.com Pass: test " :tags="['React','Redux','SCSS','REST API']" codeURL="https://github.com/vlzher/dictionary-v2.0" viewURL="https://dictionary-shshshsk-vlzher.netlify.app/login"/>
-      <PortfolioItem :photoURL=3 fText="Clock" sText="Clock" :tags="['React','SCSS']" codeURL="https://github.com/vlzher/clock" viewURL="https://custom-clock-vlzher.netlify.app/"/>
+      <PortfolioItem :photoURL=3 fText="Sprite NFT" :is-disabled-git=true :isDisabled=false sText="Sprite NFT APP" :tags="['React','SCSS','Ether.js']" codeURL="https://github.com/vlzher/" viewURL="https://sprite-nft.netlify.app/"/>
       <PortfolioItem :photoURL=4 fText="Kanban Board" sText="Management Tool for visualizing work" :tags="['React','Redux','Drag and Drop API']" codeURL="https://github.com/vlzher/kanban-board" viewURL="https://kanban-desk.netlify.app/"/>
       <PortfolioItem :photoURL=5 fText="Paint Analogue" sText="Simple graphic editor" :tags="['React','Canvas', 'WebSocket']" codeURL="https://github.com/vlzher/PaintAnalogue" viewURL="https://paint-analogue.netlify.app/"/>
       <PortfolioItem :photoURL=6 fText="Teamder" :isDisabled=true sText="Currently In Development" :tags="['Vue','Tailwind CSS','Vuex','JWT','REST API']" codeURL="https://github.com/vlzher/teamder"/>
