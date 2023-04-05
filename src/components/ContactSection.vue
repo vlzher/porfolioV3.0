@@ -102,12 +102,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 40%;
+  width: 80%;
   height: 100px;
   margin-top: 20px;
   background-color: #24263B;
-  border-radius: 5px;
-  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1px;
 }
 .github{
   border-radius: 50%;
