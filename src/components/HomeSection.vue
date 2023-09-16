@@ -6,7 +6,7 @@
       <div class="home-sub-text">Web development is not just about creating pretty websites.
         It's about understanding the world we live in and creating solutions
         that make people's lives easier.</div>
-    </div>
+<!--    </div>-->
     <div class="photo"></div>
   </div>
 </template>

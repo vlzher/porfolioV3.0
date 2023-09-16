@@ -101,7 +101,7 @@
 .link-container{
   display: flex;
   justify-content: space-around;
-  align-items: centerf;
+  align-items: center;
   width: 80%;
   height: 100px;
   margin-top: 20px;
